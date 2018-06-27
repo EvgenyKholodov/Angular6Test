@@ -1,0 +1,47 @@
+<form #f="ngForm" (ngSubmit)="addDepartment(f)"novalidate>
+    <h3>Add new department</h3>
+    <fieldset>
+        <div class="form-group">
+            <label>Name</label>
+            <input ngModel
+                   name="name"
+                   #name="ngModel"
+                   type="text"
+                   class="form-control"
+                   required
+                   minlength="3"
+                   maxlength="10"
+                   pattern="[A-Za-z]{1,32}">
+            <div class="alert alert-danger" *ngIf="!name.valid && name.touched">
+                <div class="alert alert-danger" *ngIf="!!name.errors.required">Name is required</div>
+                <div class="alert alert-danger" *ngIf="!!name.errors.minlength">Name should be minimum
+                    {{ name.errors.minlength.requiredLength }} characters.
+                </div>
+                <div class="alert alert-danger" *ngIf="!!name.errors.pattern">Name doesn`t match pattern
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input ngModel
+                   name="description"
+                   #description="ngModel"
+                   type="text"
+                   class="form-control"
+                   required
+                   minlength="3"
+                   maxlength="10"
+                   pattern="[A-Za-z]{1,32}">
+            <div class="alert alert-danger" *ngIf="!description.valid && description.touched">
+                <div class="alert alert-danger" *ngIf="!!description.errors.required">Description is required</div>
+                <div class="alert alert-danger" *ngIf="!!description.errors.minlength">Description should be minimum
+                    {{ description.errors.minlength.requiredLength }} characters.
+                </div>
+                <div class="alert alert-danger" *ngIf="!!description.errors.pattern">Description doesn`t match pattern
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <button type="submit" [disabled]="!description.valid || !name.valid">Add Department</button>
+</form>

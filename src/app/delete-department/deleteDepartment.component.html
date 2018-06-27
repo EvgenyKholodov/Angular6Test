@@ -1,0 +1,9 @@
+<h3>Delete Department</h3>
+<div class=main>
+    <div class="fill">name</div>
+    <div class="fill">description</div>
+</div>
+<div class="main" *ngFor="let department of departments" (click)="deleteDepartment(department)">
+    <div class="fill">{{department.name}}</div>
+    <div class="fill">{{department.description}}</div>
+</div>

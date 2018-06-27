@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <h1>{{title}}</h1>
+  <nav>
+    <button routerLink="/employees">All employees</button>
+    <button routerLink="/add-department">Add new</button>
+    <button routerLink="/delete-department">Delete department</button>
+    <button routerLink="/get-department-users/:id">get departmen`s users</button>
+  </nav>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

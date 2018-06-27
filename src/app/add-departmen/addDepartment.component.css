@@ -1,0 +1,28 @@
+.form-control.ng-touched.ng-invalid {
+    border: 2px solid red
+}
+
+h3 {
+    color: #989898;
+    font-family: -webkit-body;
+}
+label {
+    color: #989898;
+}
+
+button {
+    background: #d0cfcf;
+    border: none;
+    width: 200px;
+    margin-bottom: 30px;
+    height: 32px;
+    color: white;
+}
+
+button:hover {
+    background: transparent;
+    color: #615757;
+}
+button[disabled]:hover {
+    background: #7d7a7a;
+}

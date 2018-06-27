@@ -1,0 +1,40 @@
+.wrapper {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  font-size: 45px;
+  color: #a7a0a0;
+  font-family: -webkit-body;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+button {
+  background: #d0cfcf;
+  border: none;
+  width: 200px;
+  margin-bottom: 30px;
+  height: 32px;
+  color: white;
+}
+
+button:hover {
+  background: transparent;
+  color: #615757;
+}
+button:focus {outline:0;}
+
+img {
+  width: 1000px;
+  position: absolute;
+  left: calc(50% - 500px);
+  z-index: 100000;
+}
+
+main {
+  margin: auto;
+}

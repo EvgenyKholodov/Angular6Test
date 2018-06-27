@@ -1,0 +1,27 @@
+.form-control.ng-touched.ng-invalid {
+    border: 2px solid red
+}
+
+h3 {
+    color: #989898;
+    font-family: -webkit-body;
+}
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.fill {
+    width: 50%;
+    border: 1px solid grey;
+}
+
+.fill.employee {
+    width: 15%;
+    border: 1px solid grey;
+}
+
+.selected {
+    background: #b9b9b9;
+}

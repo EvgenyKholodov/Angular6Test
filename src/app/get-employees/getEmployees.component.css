@@ -1,0 +1,19 @@
+ul {
+    /*list-style: none;*/
+}
+li p {
+    text-align: left;
+
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+
+.fill {
+    width: 15%;
+    border: 1px solid grey;
+}

@@ -1,0 +1,18 @@
+<div class=main>
+    <div class="fill">id</div>
+    <div class="fill">firstName</div>
+    <div class="fill">lastName</div>
+    <div class="fill">phone</div>
+    <div class="fill">salary</div>
+    <div class="fill">departmentId</div>
+    <div class="fill">departmentName</div>
+</div>
+<div class="main" *ngFor="let emloyee of employees">
+    <div class="fill">{{emloyee.id}}</div>
+    <div class="fill">{{emloyee.firstName}}</div>
+    <div class="fill">{{emloyee.lastName}}</div>
+    <div class="fill">{{emloyee.phone}}</div>
+    <div class="fill">{{emloyee.salary}}</div>
+    <div class="fill">{{emloyee.departmentId}}</div>
+    <div class="fill">{{emloyee.departmentName}}</div>
+</div>

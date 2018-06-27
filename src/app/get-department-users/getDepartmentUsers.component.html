@@ -1,0 +1,30 @@
+<h3>Choose Department</h3>
+<div class=main>
+    <div class="fill">name</div>
+    <div class="fill">description</div>
+</div>
+<div class="main" [class.selected]="department.id === departmentId" *ngFor="let department of departments" [routerLink]="['/get-department-users/' + department.id]"
+     (click)="updateData()">
+    <div class="fill">{{department.name}}</div>
+    <div class="fill">{{department.description}}</div>
+</div>
+
+<h3>Users of selected department</h3>
+<div class=main>
+    <div class="fill employee">id</div>
+    <div class="fill employee">firstName</div>
+    <div class="fill employee">lastName</div>
+    <div class="fill employee">phone</div>
+    <div class="fill employee">salary</div>
+    <div class="fill employee">departmentId</div>
+    <div class="fill employee">departmentName</div>
+</div>
+<div class="main wrap" *ngFor="let emloyee of employees">
+    <div class="fill employee">{{emloyee.id}}</div>
+    <div class="fill employee">{{emloyee.firstName}}</div>
+    <div class="fill employee">{{emloyee.lastName}}</div>
+    <div class="fill employee">{{emloyee.phone}}</div>
+    <div class="fill employee">{{emloyee.salary}}</div>
+    <div class="fill employee">{{emloyee.departmentId}}</div>
+    <div class="fill employee">{{emloyee.departmentName}}</div>
+</div>
